@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe Conosco | UNIQUELAB7</title>
+
+    <!-- Meta Tags para SEO e Social -->
+    <meta name="description" content="Faça parte da equipe UNIQUELAB7. Envie seu currículo e venha construir o futuro do diagnóstico de alta precisão conosco.">
+    <meta property="og:title" content="UNIQUELAB7 | Carreiras e Oportunidades">
+    <meta property="og:image" content="https://i.postimg.cc/K8dBTt5N/Chat-GPT-Image-3-de-abr-de-2026-08-22-59.png">
+ 
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1F2F5A',
+                            gold: '#C9A45B',
+                            'gold-light': '#E5C98A',
+                            'gold-dark': '#9C7A3A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --brand-blue: #1F2F5A;
+        --brand-gold: #C9A45B;
+        --brand-gold-light: #E5C98A;
+        --bg-off-white: #F2EDE4;
+    }
+
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: var(--bg-off-white);
+        color: var(--brand-blue);
+        line-height: 1.6;
+    }
+
+    .font-serif { font-family: 'Playfair Display', serif; }
+
+    /* Header Transitions - Glassmorphism */
+    header.scrolled {
+        background: rgba(31, 47, 90, 0.95);
+        backdrop-filter: blur(15px);
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+        position: relative;
+        transition: all 0.4s ease;
+        opacity: 0.7;
+        letter-spacing: 0.2em;
+    }
+    .nav-link:hover { opacity: 1; color: var(--brand-gold); }
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: var(--brand-gold);
+        transition: all 0.4s ease;
+    }
+    .nav-link:hover::after { width: 100%; }
+
+    /* Inputs Estilizados */
+    .input-field {
+        width: 100%;
+        background: white;
+        border: 1px solid rgba(31, 47, 90, 0.1);
+        border-radius: 1rem;
+        padding: 1.25rem 1.5rem;
+        color: var(--brand-blue);
+        transition: all 0.3s ease;
+        font-size: 0.875rem;
+        outline: none;
+    }
+    .input-field:focus {
+        border-color: var(--brand-gold);
+        box-shadow: 0 10px 25px -5px rgba(197, 160, 89, 0.15);
+    }
+
+    /* Animações de Revelação */
+    .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Barra de Progresso Real */
+    #progress-container {
+        display: none;
+        width: 100%;
+        background-color: #f1f1f1;
+        border-radius: 99px;
+        height: 8px;
+        margin-top: 20px;
+        overflow: hidden;
+        border: 1px solid rgba(0,0,0,0.03);
+    }
+    #progress-bar {
+        width: 0%;
+        height: 100%;
+        background: linear-gradient(90deg, var(--brand-gold), var(--brand-gold-light));
+        transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 0 15px rgba(197, 160, 89, 0.3);
+    }
+
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    @media (max-width: 1024px) {
+        .mobile-nav-link:active {
+            color: var(--brand-gold);
+            background-color: rgba(255, 255, 255, 0.05);
+            padding-left: 10px;
+        }
+    }
+</style>
+<link rel="icon" type="image/jpg" href="https://i.postimg.cc/d13dCnyt/Whats-App-Image-2026-04-01-at-18-00-45.jpg">
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Header Corporativo -->
+    <header id="main-header" class="fixed top-0 w-full z-[100] transition-all duration-500 py-4 md:py-6 bg-brand-blue border-b border-white/5">
+        <div class="container mx-auto px-4 md:px-12 flex justify-between items-center">
+            
+            <a href="/" class="flex items-center group relative z-[110]">
+                <img src="https://i.postimg.cc/d13dCnyt/Whats-App-Image-2026-04-01-at-18-00-45.jpg" alt="UNIQUELAB7 Logo" class="h-8 md:h-12 rounded-sm brightness-110">
+                <div class="hidden sm:flex flex-col leading-none ml-3 md:ml-4">
+                    <span class="text-white text-base md:text-lg font-bold tracking-[0.2em] uppercase">UNIQUELAB7</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-4 xl:gap-8 text-[10px] font-bold uppercase tracking-widest text-white">
+                <a href="/#sobre" data-i18n="nav-sobre" class="nav-link">Quem Somos</a>
+                <a href="/#exames" data-i18n="nav-exames" class="nav-link">Portfólio</a>
+                <a href="/#atuacao" data-i18n="nav-atuacao" class="nav-link">Áreas de Atuação</a>
+                <a href="/#contato" data-i18n="nav-contato" class="nav-link">Contato</a>
+            </nav>
+
+            <div class="flex items-center gap-3 md:gap-6 relative z-[110]">
+                <!-- Seletor de Idiomas Desktop -->
+                <div class="relative group hidden md:block mr-4">
+                    <button class="flex items-center gap-3 text-white/70 hover:text-brand-gold transition-all duration-300 py-2 border-r border-white/10 pr-6 mr-2">
+                        <img id="desktop-flag-img" src="https://cdn-icons-png.flaticon.com/512/197/197386.png" class="w-4 h-4 rounded-full object-cover shadow-sm" alt="PT">
+                        <span id="desktop-flag-text" class="text-[10px] font-bold tracking-[0.2em] uppercase">PT</span>
+                        <svg class="w-3 h-3 opacity-40 group-hover:rotate-180 transition-transform duration-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                    </button>
+
+                    <div class="absolute top-full right-0 mt-2 w-40 bg-brand-blue/95 backdrop-blur-xl border border-white/10 rounded-xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 shadow-2xl z-[120]">
+                        <a href="javascript:void(0)" onclick="changeLanguage('pt')" class="flex items-center gap-3 px-5 py-2.5 hover:bg-white/5 transition-colors group/item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/197/197386.png" class="w-4 h-4 rounded-full object-cover" alt="Brasil">
+                            <span class="text-[9px] font-bold text-brand-gold tracking-widest uppercase">Português</span>
+                        </a>
+                        <a href="javascript:void(0)" onclick="changeLanguage('en')" class="flex items-center gap-3 px-5 py-2.5 hover:bg-white/5 transition-colors group/item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/323/323329.png" class="w-4 h-4 rounded-full object-cover transition-all" alt="English">
+                            <span class="text-[9px] font-bold text-white/40 group-hover/item:text-white tracking-widest uppercase">English</span>
+                        </a>
+                        <a href="javascript:void(0)" onclick="changeLanguage('es')" class="flex items-center gap-3 px-5 py-2.5 hover:bg-white/5 transition-colors group/item">
+                            <img src="https://cdn-icons-png.flaticon.com/512/323/323365.png" class="w-4 h-4 rounded-full object-cover transition-all" alt="Español">
+                            <span class="text-[9px] font-bold text-white/40 group-hover/item:text-white tracking-widest uppercase">Español</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="/" class="hidden sm:flex border border-brand-gold/40 text-brand-gold hover:bg-brand-gold hover:text-brand-blue px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] transition-all duration-500">
+                    Início
+                </a>
+                
+                <button id="mobile-menu-btn" class="lg:hidden flex flex-col justify-center items-center gap-1.5 w-10 h-10 border border-white/20 rounded-full focus:outline-none relative z-[110]">
+                    <span class="w-5 h-[1.5px] bg-brand-gold transition-all duration-300"></span>
+                    <span class="w-5 h-[1.5px] bg-brand-gold transition-all duration-300"></span>
+                    <span class="w-5 h-[1.5px] bg-brand-gold transition-all duration-300"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overlay de Navegação Mobile -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-brand-blue z-[105] opacity-0 pointer-events-none transition-opacity duration-500 flex flex-col items-center justify-center">
+        <nav class="flex flex-col items-center gap-6 text-center relative z-10 w-full px-6">
+            <a href="/" class="mobile-nav-link text-white text-xl font-serif italic">Página Inicial</a>
+            <a href="/#sobre" class="mobile-nav-link text-white text-xl font-serif italic">Quem Somos</a>
+            <a href="/#exames" class="mobile-nav-link text-white text-xl font-serif italic">Nossos Exames</a>
+            <a href="/#contato" class="mobile-nav-link text-brand-gold text-xs font-bold uppercase tracking-[0.3em] mt-4 border-b border-brand-gold/20 pb-2">Agendar Contato</a>
+        </nav>
+        
+        <div class="flex items-center gap-8 mt-10 border-t border-white/10 pt-8">
+            <button onclick="changeLanguage('pt')" class="flex flex-col items-center gap-2 flag-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/197/197386.png" class="w-6 h-6 rounded-full border border-brand-gold" alt="PT">
+                <span class="text-brand-gold text-[10px] font-bold">PT</span>
+            </button>
+            <button onclick="changeLanguage('en')" class="flex flex-col items-center gap-2 opacity-40 flag-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/323/323329.png" class="w-6 h-6 rounded-full border border-transparent" alt="EN">
+                <span class="text-white text-[10px] font-bold">EN</span>
+            </button>
+            <button onclick="changeLanguage('es')" class="flex flex-col items-center gap-2 opacity-40 flag-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/323/323365.png" class="w-6 h-6 rounded-full border border-transparent" alt="ES">
+                <span class="text-white text-[10px] font-bold">ES</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative pt-56 pb-24 bg-brand-blue overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-blue/80 via-brand-blue/60 to-[#F2EDE4] z-10"></div>
+            <img src="https://i.postimg.cc/K8dBTt5N/Chat-GPT-Image-3-de-abr-de-2026-08-22-59.png" class="w-full h-full object-cover opacity-30" alt="Fundo Trabalhe Conosco">
+        </div>
+
+        <div class="container mx-auto px-6 lg:px-16 relative z-20 text-center">
+            <div class="inline-flex items-center gap-4 mb-8 reveal active">
+                <div class="w-10 h-[1px] bg-brand-gold"></div>
+                <span data-i18n="tc-tag" class="text-brand-gold text-[10px] font-bold uppercase tracking-[0.6em]">Talentos</span>
+                <div class="w-10 h-[1px] bg-brand-gold"></div>
+            </div>
+
+            <h1 class="text-5xl md:text-[6rem] font-serif text-white leading-tight mb-8 reveal active">
+                <span data-i18n="tc-t1">Faça parte da</span> <br>
+                <span class="italic text-brand-gold font-light" data-i18n="tc-t2">Nossa Evolução.</span>
+            </h1>
+
+            <p data-i18n="tc-desc" class="text-gray-300 md:text-xl max-w-2xl mx-auto font-light leading-relaxed reveal active">
+                A UNIQUELAB7 busca profissionais que acreditam que a precisão técnica e o cuidado humano devem caminhar juntos.
+            </p>
+        </div>
+    </section>
+
+    <!-- Formulário Section -->
+    <section class="py-24 bg-[#F2EDE4] relative z-10 -mt-20">
+        <div class="container mx-auto px-6 lg:px-16 max-w-5xl">
+            <div class="bg-white rounded-[3.5rem] shadow-2xl border border-gray-100 p-10 md:p-20 reveal active relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-gold via-brand-gold-light to-brand-gold opacity-30"></div>
+                
+                <!-- Mensagem de Sucesso -->
+                <div id="success-message" class="hidden text-center py-16">
+                    <div class="w-24 h-24 bg-green-50 rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-inner">
+                        <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    </div>
+                    <h3 data-i18n="tc-success-t" class="text-4xl font-serif text-brand-blue mb-6">Recebemos o seu Currículo!</h3>
+                    <p data-i18n="tc-success-d" class="text-gray-500 mb-10 max-w-md mx-auto">Obrigado pela confiança. Caso o seu perfil se enquadre em nossas vagas abertas, nosso time entrará em contato em breve.</p>
+                    <button onclick="window.location.reload()" class="bg-brand-gold text-brand-blue px-12 py-5 rounded-2xl font-bold uppercase tracking-widest text-[11px] hover:shadow-xl transition-all">Enviar Outro Documento</button>
+                </div>
+
+                <form id="career-form" class="space-y-10">
+                    <div class="border-b border-gray-50 pb-8">
+                        <h3 data-i18n="tc-form-t" class="text-2xl font-serif text-brand-blue">Dados de Candidatura</h3>
+                        <p data-i18n="tc-form-d" class="text-gray-400 text-sm font-light mt-1">Preencha com atenção para facilitar o nosso processo seletivo.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold text-gray-400 uppercase tracking-widest ml-2">Nome Completo *</label>
+                            <input type="text" required class="input-field" placeholder="Ex: Rodrigo Sampaio">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold text-gray-400 uppercase tracking-widest ml-2">E-mail para Contato *</label>
+                            <input type="email" required class="input-field" placeholder="email@corporativo.com">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold text-gray-400 uppercase tracking-widest ml-2">Telefone / WhatsApp *</label>
+                            <input type="tel" required class="input-field" placeholder="(11) 98765-4321">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold text-gray-400 uppercase tracking-widest ml-2">Vaga Pretendida *</label>
+                            <select required class="input-field bg-white cursor-pointer appearance-none">
+                                <option value="" disabled selected>Selecione a área...</option>
+                                <option value="coleta">Enfermagem / Coleta Técnica</option>
+                                <option value="laboratorio">Analista de Laboratório</option>
+                                <option value="atendimento">Recepção / Concierge</option>
+                                <option value="administrativo">Administrativo e Apoio</option>
+                                <option value="ti">TI e Inovação</option>
+                                <option value="outros">Outras Oportunidades</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-bold text-gray-400 uppercase tracking-widest ml-2">LinkedIn ou Portfólio Online</label>
+                        <input type="url" class="input-field" placeholder="https://linkedin.com/in/seu-perfil">
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-bold text-gray-400 uppercase tracking-widest ml-2">Apresentação / Mensagem</label>
+                        <textarea rows="5" class="input-field resize-none" placeholder="Fale um pouco sobre as suas competências e experiências anteriores..."></textarea>
+                    </div>
+
+                    <!-- Area de Upload Cache Local -->
+                    <div class="pt-6">
+                        <label class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4 block ml-2">Anexar Currículo (PDF/DOCX) *</label>
+                        <div class="relative group cursor-pointer">
+                            <input type="file" id="cv-upload" accept=".pdf,.doc,.docx" required class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10">
+                            <div id="upload-box" class="w-full border-2 border-dashed border-gray-200 rounded-[2.5rem] p-16 text-center transition-all group-hover:border-brand-gold group-hover:bg-brand-gold/[0.02]">
+                                <div class="w-20 h-20 bg-gray-50 rounded-3xl flex items-center justify-center text-gray-300 mx-auto mb-6 group-hover:text-brand-gold transition-all group-hover:scale-105 group-hover:rotate-3">
+                                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                                </div>
+                                <p id="upload-text" class="text-sm text-gray-400 font-medium tracking-wide">Arraste seu arquivo aqui ou clique para buscar</p>
+                                
+                                <!-- Barra de Cache Real-time -->
+                                <div id="progress-container">
+                                    <div id="progress-bar"></div>
+                                </div>
+                                <p id="progress-text" class="text-[10px] text-brand-gold font-bold mt-4 hidden uppercase tracking-[0.2em] animate-pulse">A carregar para o cache...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-10">
+                        <button type="submit" id="submit-btn" class="w-full bg-brand-blue text-white py-6 rounded-3xl font-bold uppercase tracking-[0.3em] text-[11px] hover:bg-brand-gold hover:text-brand-blue transition-all shadow-2xl active:scale-[0.98] flex items-center justify-center gap-4">
+                            <span data-i18n="tc-btn">Finalizar Candidatura</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Master -->
+    <footer class="bg-brand-blue pt-24 pb-12 border-t border-brand-gold/20 relative overflow-hidden">
+        <div class="container mx-auto px-6 lg:px-16 relative z-10 text-center">
+            <img src="https://i.postimg.cc/d13dCnyt/Whats-App-Image-2026-04-01-at-18-00-45.jpg" alt="Logo UNIQUELAB7" class="h-10 mx-auto mb-8 rounded-sm brightness-125">
+            <p class="text-brand-gold/80 text-[9px] uppercase tracking-[0.5em] mb-12 italic">Singular por natureza.</p>
+            <div class="h-[1px] w-full bg-white/10 mb-12"></div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-[8px] text-gray-400 uppercase tracking-[0.4em]">
+                <p>© 2026 UNIQUELAB7 — Diagnósticos de Alta Precisão. Todos os direitos reservados.</p>
+                <p>Signature by <a href="#" class="text-gray-300 font-bold hover:text-white transition-colors">Prime Studios</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Back to Top -->
+    <button id="backToTop" class="hidden lg:flex fixed bottom-8 right-8 z-[90] w-14 h-14 bg-brand-gold text-brand-blue rounded-full shadow-2xl items-center justify-center opacity-0 translate-y-10 pointer-events-none transition-all duration-500 hover:scale-110">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.5 15.75l7.5-7.5 7.5 7.5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <script>
+        // --- 1. Lógica de Interface e Menu ---
+        const header = document.getElementById('main-header');
+        const btt = document.getElementById('backToTop');
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+        const lines = mobileBtn.querySelectorAll('span');
+        let isMenuOpen = false;
+
+        function toggleMenu(fromPopState = false) {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) history.pushState({ menuOpen: true }, ''); 
+            else if (!fromPopState) history.back();
+
+            mobileOverlay.classList.toggle('opacity-0', !isMenuOpen);
+            mobileOverlay.classList.toggle('pointer-events-none', !isMenuOpen);
+            mobileOverlay.classList.toggle('opacity-100', isMenuOpen);
+            mobileOverlay.classList.toggle('pointer-events-auto', isMenuOpen);
+            
+            lines[0].style.transform = isMenuOpen ? 'translateY(7.5px) rotate(45deg)' : 'none';
+            lines[1].style.opacity = isMenuOpen ? '0' : '1';
+            lines[2].style.transform = isMenuOpen ? 'translateY(-7.5px) rotate(-45deg)' : 'none';
+            document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+        }
+
+        mobileBtn.addEventListener('click', () => toggleMenu(false));
+        window.addEventListener('popstate', () => { if (isMenuOpen) toggleMenu(true); });
+
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+            if (window.scrollY > 600) {
+                btt.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+                btt.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+            } else {
+                btt.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+                btt.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+            }
+        });
+        btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // --- 2. Lógica de Tradução PT/EN/ES ---
+        const translations = {
+            'pt': {
+                'nav-diag': 'Diagnósticos', 'nav-sobre': 'Quem Somos', 'nav-exames': 'Portfólio', 'nav-atuacao': 'Áreas de Atuação', 'nav-contato': 'Contato',
+                'tc-tag': 'Talentos', 'tc-t1': 'Faça parte da', 'tc-t2': 'Nossa Evolução.', 'tc-desc': 'A UNIQUELAB7 busca profissionais que acreditam que a precisão técnica e o cuidado humano devem caminhar juntos.',
+                'tc-form-t': 'Dados de Candidatura', 'tc-form-d': 'Preencha com atenção para facilitar o nosso processo seletivo.', 'tc-btn': 'Finalizar Candidatura',
+                'tc-success-t': 'Recebemos o seu Currículo!', 'tc-success-d': 'Obrigado pela confiança. Nosso time analisará o seu perfil.'
+            },
+            'en': {
+                'nav-diag': 'Diagnostics', 'nav-sobre': 'About Us', 'nav-exames': 'Portfolio', 'nav-atuacao': 'Areas', 'nav-contato': 'Contact',
+                'tc-tag': 'Talents', 'tc-t1': 'Be part of', 'tc-t2': 'Our Evolution.', 'tc-desc': 'UNIQUELAB7 looks for professionals who believe technical precision and human care must go hand in hand.',
+                'tc-form-t': 'Application Data', 'tc-form-d': 'Fill in carefully to facilitate our selection process.', 'tc-btn': 'Submit Application',
+                'tc-success-t': 'Resume Received!', 'tc-success-d': 'Thank you for your trust. Our team will review your profile.'
+            },
+            'es': {
+                'nav-diag': 'Diagnósticos', 'nav-sobre': 'Nosotros', 'nav-exames': 'Portafolio', 'nav-atuacao': 'Áreas', 'nav-contato': 'Contacto',
+                'tc-tag': 'Talentos', 'tc-t1': 'Sea parte de', 'tc-t2': 'Nuestra Evolución.', 'tc-desc': 'UNIQUELAB7 busca profesionales que crean que la precisión técnica y el cuidado humano deben ir juntos.',
+                'tc-form-t': 'Datos de Candidatura', 'tc-form-d': 'Complete con atención para facilitar nuestro proceso de selección.', 'tc-btn': 'Finalizar Candidatura',
+                'tc-success-t': '¡Currículum Recibido!', 'tc-success-d': 'Gracias por su confianza. Nuestro equipo analizará su perfil.'
+            }
+        };
+
+        const flags = { 'pt': 'https://cdn-icons-png.flaticon.com/512/197/197386.png', 'en': 'https://cdn-icons-png.flaticon.com/512/323/323329.png', 'es': 'https://cdn-icons-png.flaticon.com/512/323/323365.png' };
+
+        function changeLanguage(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) el.innerHTML = translations[lang][key];
+            });
+            const desktopFlagImg = document.getElementById('desktop-flag-img');
+            const desktopFlagText = document.getElementById('desktop-flag-text');
+            if (desktopFlagImg) desktopFlagImg.src = flags[lang];
+            if (desktopFlagText) desktopFlagText.textContent = lang.toUpperCase();
+            localStorage.setItem('preferredLang', lang);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('preferredLang') || 'pt';
+            changeLanguage(savedLang);
+            document.querySelectorAll(".reveal").forEach(el => el.classList.add("active"));
+        });
+    </script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+        import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCG3grct-h-Ra9nSrTzw29SQD1jWSa0oUM",
+            authDomain: "uniquelab7-f4447.firebaseapp.com",
+            projectId: "uniquelab7-f4447",
+            storageBucket: "uniquelab7-f4447.firebasestorage.app",
+            messagingSenderId: "731054939937",
+            appId: "1:731054939937:web:7b0f8b6522d6da55182860",
+            measurementId: "G-61Y1HXR09M"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const db = getFirestore(app);
+
+        const form = document.getElementById('career-form');
+        const btn = document.getElementById('submit-btn');
+        const progContainer = document.getElementById('progress-container');
+        const progBar = document.getElementById('progress-bar');
+        const progText = document.getElementById('progress-text');
+        
+        const fileInput = document.getElementById('cv-upload');
+        const uploadText = document.getElementById('upload-text');
+        const uploadBox = document.getElementById('upload-box');
+        
+        let cachedFileBase64 = null;
+        let cachedFileName = null;
+
+        // --- SISTEMA DE CACHE LOCAL (Lê o PDF na hora) ---
+        fileInput.addEventListener('change', e => {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            // Limite de segurança de 700KB para caber perfeitamente no Firestore
+            if (file.size > 716800) {
+                alert("O ficheiro excede o tamanho máximo suportado de 700KB. Por favor, comprima o seu PDF e tente novamente.");
+                fileInput.value = "";
+                return;
+            }
+
+            // Animação de interface enquanto lê o ficheiro
+            uploadBox.classList.add('border-brand-gold', 'bg-brand-gold/[0.05]');
+            uploadText.innerHTML = `<span class="text-brand-gold font-bold uppercase tracking-widest">A carregar para a memória...</span>`;
+            
+            progContainer.style.display = 'block';
+            progBar.style.width = '50%';
+            progBar.style.background = 'linear-gradient(90deg, #C9A45B, #E5C98A)'; // Cor gold principal atualizada
+            progText.classList.remove('hidden', 'text-green-600');
+            progText.classList.add('text-brand-gold');
+            progText.innerText = 'A processar documento...';
+
+            const reader = new FileReader();
+            
+            // Quando a leitura for concluída...
+            reader.onload = function(event) {
+                cachedFileBase64 = event.target.result;
+                cachedFileName = file.name;
+                
+                uploadText.innerHTML = `<span class="text-green-600 font-bold uppercase tracking-widest">Documento em Cache!</span><br>${file.name}`;
+                
+                // Barra fica verde para mostrar sucesso
+                progBar.style.width = '100%';
+                progBar.style.background = 'linear-gradient(90deg, #22c55e, #16a34a)';
+                progText.classList.replace('text-brand-gold', 'text-green-600');
+                progText.innerText = 'Pronto para enviar com o formulário!';
+            };
+            
+            reader.onerror = function() {
+                alert("Ocorreu um erro ao ler o ficheiro no seu navegador.");
+            };
+            
+            // Converte o PDF num URL de texto gigante
+            reader.readAsDataURL(file);
+        });
+
+        // --- ENVIO DIRETO PARA O FIREBASE (Firestore) ---
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            if (!cachedFileBase64) {
+                return alert("Por favor, selecione um currículo e aguarde a barra ficar verde antes de finalizar.");
+            }
+
+            // Bloqueia interface
+            btn.disabled = true;
+            btn.classList.add('opacity-50', 'cursor-not-allowed');
+            btn.innerHTML = 'A Enviar Documentação...';
+
+            const candidatoData = {
+                name: form.elements[0].value,
+                email: form.elements[1].value,
+                phone: form.elements[2].value,
+                area: form.elements[3].options[form.elements[3].selectedIndex].text,
+                linkedin: form.elements[4].value,
+                message: form.elements[5].value,
+                fileName: cachedFileName,
+                resumeUrl: cachedFileBase64, // Enviamos o PDF diretamente como texto!
+                createdAt: serverTimestamp()
+            };
+
+            try {
+                await addDoc(collection(db, 'artifacts', 'uniquelab-admin-local', 'public', 'data', 'resumes'), candidatoData);
+                
+                form.classList.add('hidden');
+                document.getElementById('success-message').classList.remove('hidden');
+                window.scrollTo({ top: form.offsetTop - 200, behavior: 'smooth' });
+
+            } catch (error) {
+                console.error("Erro fatal no Firebase:", error);
+                alert("O servidor encontrou um problema ao gravar: " + error.message);
+                
+                btn.disabled = false;
+                btn.classList.remove('opacity-50', 'cursor-not-allowed');
+                btn.innerHTML = 'Finalizar Candidatura';
+            }
+        });
+    </script>
+</body>
+</html>
